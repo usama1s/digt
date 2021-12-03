@@ -176,7 +176,7 @@ letter-spacing: 0.02em;
 text-transform: uppercase;
 } */
 .d-links-list {
-display: block;
+
     z-index: 1;
     background: #565656;
     height: 100% !important;

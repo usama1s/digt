@@ -82,7 +82,7 @@
 }
 
 @media (min-width: 767px) {
-  /* .d-links-list {
+  .d-links-list {
     display: block !important;
-  } */
+  }
 }
