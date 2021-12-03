@@ -1,9 +1,11 @@
 @media (max-width: 767px) {
 .mobile-nav-btn{
-  display: block;
+  display: flex;
+
 }
-.navigation .d-links{
-  display: none;
+.navigation .d-links:not(.d-links-user){
+  /* display: none; */
+  width: 100%;
 }
 .navigation{
   position: absolute;
@@ -18,4 +20,22 @@
 .d-brand{
   height: 100%;
 }
+.d-links-list {
+    width: 290px;
+    height: 100vh;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+          background: #565656;
+}
+.mobile-nav-btn[aria-expanded="true"] .icon{
+  background-image: url('../images/icons/close.svg');
+
+}
+}
+@media (min-width: 767px){
+  .d-links-list{
+    display: block !important;
+  }
 }

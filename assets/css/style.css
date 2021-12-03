@@ -85,26 +85,64 @@ body {
   position: relative;
   max-height: 100vh;
   z-index: 1000;
+  min-width: 200px;
+  overflow: hidden;
 }
 .mobile-nav-btn{
-display: none;
-width: 18px;
-
-height: 12px;
-margin: 0 20px;
+  display: none;
+  width: 38px;
+      height: 30px;
+      margin: 0 20px;
+      padding: 0 10px;
+      z-index: 10000;
+      /* background: red !important; */
+      position: relative;
+      /* position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateY(-50%); */
+      align-items: center;
+      justify-content: center;
 }
-.mobile-nav-btn span{
+.mobile-nav-btn object{
+  z-index: 999;
+  /* display: none; */
+  position: relative;
+}
+.mobile-nav-btn .icon{
   display: block;
-  width: 100%;
+  background-image: url('../images/icons/hamburg-menu.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 18px;
+  height: 13px;
+  transition: background-image 0.5s;
+  /* width: 18px;
   height: 2px;
   background: #FFF;
+  min-width: 18px;
+  position: relative; */
 }
-.mobile-nav-btn span:before{
+/* .mobile-nav-btn .icon:before{
+  content: "";
    display: block;
-  width: 100%;
+  width: 18px;
   height: 2px;
   background: #FFF;
+  position: absolute;
+  top: -5px;
 }
+.mobile-nav-btn .icon:after{
+  content: "";
+   display: block;
+  width: 18px;
+  height: 2px;
+  background: #FFF;
+  position: absolute;
+  bottom: -5px;
+} */
+
 .d-brand {
   padding: 0 25px;
   height: 70px;
@@ -112,10 +150,13 @@ margin: 0 20px;
   align-items: center;
   justify-content: flex-start;
   width: 200px;
+  z-index: 1;
+  background: #565656;
 }
 .d-brand object{
   width: 99px;
 }
+
 /* .d-brand span{
   display: block;
   width: 1px;
@@ -133,11 +174,20 @@ line-height: 14px;
 letter-spacing: 0.02em;
 text-transform: uppercase;
 } */
+.d-links-list {
+
+    z-index: 1;
+    background: #565656;
+    height: 100% !important;
+    width: 200px;
+}
 .d-links {
   overflow-y: auto;
   max-height: calc(100vh - 70px - 90px);
   list-style: none;
   width: 200px;
+  z-index: 1;
+  background: #565656;
 }
 
 .d-links>li {
@@ -145,6 +195,8 @@ text-transform: uppercase;
   width: 100%;
   padding: 0;
   transition: height 0.5s;
+  z-index: 1;
+  background: #565656;
 }
 
 .d-links>li>a {
@@ -160,6 +212,7 @@ text-transform: uppercase;
   justify-content: center;
   padding: 17px 0;
   color: #FFFFFF;
+  z-index: 1;
 }
 
 .d-links:not(.db-links)>li>a:hover:not(.user),
@@ -247,7 +300,7 @@ text-transform: uppercase;
   transition: transform 0.5s;
 }
 
-.d-links li:hover a.user p::after {
+.d-links li a.user[aria-selected="true"] p::after {
   transform: rotate(0);
 }
 
@@ -290,7 +343,7 @@ text-transform: uppercase;
   bottom: 0;
   margin: 15px 0;
   background: #565656;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .db-links li {
@@ -321,30 +374,49 @@ text-transform: uppercase;
   background: #FFFFFF;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 250px;
-  transform: translateX(200px);
+  /* transform: translateX(200px); */
   min-height: 100vh;
+  z-index: -1;
 }
 
-.navigation-submenu[aria-hidden="false"] {
-  /* animation-delay: 0.5s;
-  animation: slideRight 0.2s linear 1; */
-}
+ .navigation-submenu[aria-hidden="false"] {
 
+  animation: slideRight 0.2s linear 1;
+  z-index: -1;
+}
+/*
 @keyframes slideRight {
   0% {
-    opacity: 0;
+
     transform: translateX(0);
   }
 
   100% {
-    opacity: 1;
-    transform: translateX(80%);
+
+    transform: translateX(200px) !important;
   }
 }
+*/
+.navigation-submenu[aria-hidden="true"] {
+z-index: 0;
+  animation: slideLeft 0.2s linear 1;
+}
+/*
+@keyframes slideLeft {
+  0% {
 
+    transform: translateX(200px) !important;
+  }
+  100% {
+
+    transform: translateX(0);
+  }
+
+
+} */
 .navigation-submenu>ul {
   list-style: none;
   padding: 0;
@@ -441,7 +513,7 @@ text-transform: uppercase;
 
 
 .ui-dialog{
-  position: fixed !important;
+  position: absolute !important;
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%,-50%);
@@ -553,6 +625,7 @@ padding-left: 10px;
   padding: 28px 45px;
   max-height: 100vh;
   overflow-y: auto;
+  position: relative;
 }
 .s-title{
   font-weight: 500;
