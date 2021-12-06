@@ -9,7 +9,7 @@ $(document).ready(function() {
     collapsible: true,
     active: false,
     animate: 280,
-    beforeActivate: function(event, ui){
+    beforeActivate: function(event, ui) {
       $(".block-accordion").accordion({
         active: false
       });
@@ -54,15 +54,15 @@ $(document).ready(function() {
     heightStyle: "fill",
     autoHeight: false,
     animate: 280,
-    create: function( e ) {
-      var $newdiv1 = $( "<div class='menu-back-btn submenu-back'><p>Back to Main Navigation</p></div>" );
+    create: function(e) {
+      var $newdiv1 = $("<div class='menu-back-btn submenu-back'><p>Back to Main Navigation</p></div>");
       $(this).find(".block-submenu").prepend($newdiv1);
 
-      var $newdiv2 = $( "<div class='block-back-btn menu-back-btn'><p>Change Block</p></div>" );
+      var $newdiv2 = $("<div class='block-back-btn menu-back-btn'><p>Change Block</p></div>");
       $(this).find(".block-submenu").append($newdiv2);
     }
   });
-  $(".submenu-back").click(function(e){
+  $(".submenu-back").click(function(e) {
     $("#accordion-menu").accordion({
       active: false
     });
@@ -71,7 +71,7 @@ $(document).ready(function() {
     });
   });
 
-  $(".block-back-btn").click(function(e){
+  $(".block-back-btn").click(function(e) {
     $(".block-accordion").accordion({
       active: false
     });
@@ -89,8 +89,8 @@ $(document).ready(function() {
     active: false,
     heightStyle: "content",
     animate: 300,
-    create: function( e ) {
-      var $newdiv1 = $( "<div class='menu-back-btn menu-back'><p>Back to Main Navigation</p></div>" );
+    create: function(e) {
+      var $newdiv1 = $("<div class='menu-back-btn menu-back'><p>Back to Main Navigation</p></div>");
       $(this).find(".navigation-submenu").prepend($newdiv1);
     },
     beforeActivate: function(event, ui) {
@@ -131,11 +131,11 @@ $(document).ready(function() {
     }
   });
 
-$(".menu-back").click(function(e){
-  $("#accordion-menu").accordion({
-    active: false
+  $(".menu-back").click(function(e) {
+    $("#accordion-menu").accordion({
+      active: false
+    });
   });
-});
 
 
 
@@ -148,9 +148,9 @@ $(".menu-back").click(function(e){
     heightStyle: "content"
   });
 
-  $(".navigation-submenu-dropdown-list .navigation-submenu-link").each(function(e){
-    $(this).mouseenter(function(){
-      if ($(this).attr("aria-expanded") == "false"){
+  $(".navigation-submenu-dropdown-list .navigation-submenu-link").each(function(e) {
+    $(this).mouseenter(function() {
+      if ($(this).attr("aria-expanded") == "false") {
         // $(this).click();
         // console.log($(this).index());
         // $(this).accordion({ active: true });
@@ -159,7 +159,7 @@ $(".menu-back").click(function(e){
         // });
       }
       $(".navigation-submenu-dropdown-list").accordion({
-        active:$(this).prop("tabindex")
+        active: $(this).prop("tabindex")
       });
       // console.log($(this).prop("tabindex"));
 
@@ -179,16 +179,22 @@ $(".menu-back").click(function(e){
     animate: 300,
     beforeActivate: function(event, ui) {
       if (($(this).find(".not-accordion-link").attr("aria-expanded")) == "false") {
-        $(this).find(".not-accordion-link").slideUp({ duration: 0, easing: "easeInOutQuart" });
-      }else{
-        $(this).find(".not-accordion-link").slideDown({ duration: 300, easing: "easeInOutQuart" });
+        $(this).find(".not-accordion-link").slideUp({
+          duration: 0,
+          easing: "easeInOutQuart"
+        });
+      } else {
+        $(this).find(".not-accordion-link").slideDown({
+          duration: 300,
+          easing: "easeInOutQuart"
+        });
       }
     },
   });
-  $(".notification-accordions .close").click(function(){
-      $(".notification-accordions").accordion({
-        active: false
-      });
+  $(".notification-accordions .close").click(function() {
+    $(".notification-accordions").accordion({
+      active: false
+    });
   });
 
 
@@ -230,6 +236,22 @@ $(".menu-back").click(function(e){
 
 
 
+
+
+
+
+  // delete Favourites items
+
+  $(".edit-fav .delete").click(function(e) {
+    $(this).closest(".fav-item-added").slideUp('easeInOutQuart', function(e) {
+      $(this).remove();
+    });
+  });
+
+
+
+
+
   // datatable
   $('#example').DataTable({
     paging: false,
@@ -237,19 +259,41 @@ $(".menu-back").click(function(e){
     ordering: true,
     "bInfo": false
   });
+  // datatable
+  var table2 = $('#table-2').DataTable({
+    paging: true,
+    searching: true,
+    ordering: true,
+    "bInfo": false,
+    language: {
+      search: "",
+    },
+    "pagingType": "full_numbers",
+  });
+
+  $('#table-2').on('draw.dt', function(e) {
+    var info = table2.page.info();
+    $("#" + $(this).attr("id") + "_paginate span").html(info.page + 1 + "/" + info.pages);
+  });
+  table2.draw();
 
 
+  var table3 = $('#table-3').DataTable({
+    paging: true,
+    searching: true,
+    ordering: true,
+    "bInfo": false,
+    language: {
+      search: "",
+    },
+    "pagingType": "full_numbers",
+  });
 
-
-
-// delete Favourites items
-
-$(".edit-fav .delete").click(function(e){
-    $(this).closest(".fav-item-added").slideUp('easeInOutQuart',function(e){
-      $(this).remove();
-    });
-});
-
+  $('#table-3').on('draw.dt', function(e) {
+    var info = table3.page.info();
+    $("#" + $(this).attr("id") + "_paginate span").html(info.page + 1 + "/" + info.pages);
+  });
+  table3.draw();
 
 
 

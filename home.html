@@ -594,7 +594,7 @@
         <div class="scroll-item">
           <h1 class="s-title">Logistik Overview</h1>
 
-          <a class="f-ttext active" type="button" name="button">Horizontal Nav Example 1</a>
+          <a class="f-ttext active" type="button" name="button">Nav Example 1</a>
           <a class="f-ttext" type="button" name="button">Nav 1</a>
           <a class="f-ttext" type="button" name="button"> Nav 2</a>
 
@@ -634,29 +634,51 @@
         <form class="personel-info-form" action="index.html" method="post">
           <div class="form-field">
             <div class="">
-              <label for="">Input Fields</label>
+              <label for="">Date/Time</label>
             </div>
             <div class="">
-              <input type="text" name="" value="input">
+              <input type="date" name="" value="input" required>
             </div>
             <div class="">
-              <input type="text" name="" value="input">
-            </div>
-          </div>
-          <div class="form-field">
-            <div class="">
-              <label for="">Input Fields</label>
-            </div>
-            <div class="">
-              <input type="text" name="" value="input">
-            </div>
-            <div class="">
-              <!-- <input type="text" name="" value="input"> -->
+              <input type="time" name="" value="input" required>
             </div>
           </div>
           <div class="form-field">
             <div class="">
-              <label for="">Input Fields</label>
+              <label for="">Date Time</label>
+            </div>
+            <div class="">
+              <input type="datetime" name="" value="input" required>
+            </div>
+            <div class="">
+              <!-- <input type="text" name="" value="input" required> -->
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="">
+              <label for="">Password</label>
+            </div>
+            <div class="">
+              <input type="password" name="" value="input" required>
+            </div>
+            <div class="">
+              <!-- <input type="text" name="" value="input" required> -->
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="">
+              <label for="">Email</label>
+            </div>
+            <div class="">
+              <input type="email" name="" value="input" required>
+            </div>
+            <div class="">
+              <!-- <input type="text" name="" value="input" required> -->
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="">
+              <label for="">Select</label>
             </div>
             <div class="">
               <select class="" name="">
@@ -676,15 +698,15 @@
             </div>
             <div class="d-flex flex-column">
               <div class="">
-                <input type="text" name="" value="input">
+                <input type="text" name="" value="input" required>
               </div>
 
               <div class="d-flex align-items-center justify-content-center">
                 <div class="">
-                  <input type="text" name="" value="input">
+                  <input type="text" name="" value="input" required>
                 </div>
                 <div class="">
-                  <input type="text" name="" value="input">
+                  <input type="text" name="" value="input" required>
                 </div>
 
               </div>
@@ -804,10 +826,10 @@
               <label for="">Input Fields</label>
             </div>
             <div class="">
-              <input type="text" name="" value="input">
+              <input type="text" name="" value="input" required>
             </div>
             <div class="">
-              <input type="text" name="" value="input">
+              <input type="text" name="" value="input" required>
             </div>
           </div>
 
@@ -833,15 +855,15 @@
             </div>
             <div class="d-flex flex-column">
               <div class="">
-                <input type="text" name="" value="input">
+                <input type="text" name="" value="input" required>
               </div>
 
               <div class="d-flex align-items-center justify-content-center">
                 <div class="">
-                  <input type="text" name="" value="input">
+                  <input type="text" name="" value="input" required>
                 </div>
                 <div class="">
-                  <input type="text" name="" value="input">
+                  <input type="text" name="" value="input" required>
                 </div>
 
               </div>
@@ -896,6 +918,555 @@
 
         </form>
       </div>
+    </section>
+
+
+
+    <section>
+    <h1 class="s-title">Offene Aufträge
+</h1>
+<hr class="s-hr mb-30">
+<div class="cards mb-10">
+<div class="">
+  <div class="">
+    <p>Offen</p>
+    <h1>1</h1>
+  </div>
+</div>
+<div class="">
+  <div class="">
+    <p>Offen</p>
+    <h1>1</h1>
+  </div>
+</div>
+<div class="">
+  <div class="">
+    <p>Offen</p>
+    <h1>1</h1>
+  </div>
+</div>
+<div class="">
+  <div class="">
+    <p>Offen</p>
+    <h1>1</h1>
+  </div>
+</div>
+<div class="red">
+  <div class="">
+    <p>Offen</p>
+    <h1>1</h1>
+  </div>
+</div>
+</div>
+<div class="gw-table bg-sec">
+  <table class="norm-rows" id="table-2">
+    <thead>
+      <tr>
+        <th></th>
+        <th><span>Status</span></th>
+        <th><span>Firma</span></th>
+        <th><span>Erfasser</span></th>
+        <th><span>ID</span></th>
+        <th> <span>Auftrag Referenz</span> </th>
+        <th><span>Erfassdatum</span></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td> <span class="color" style="background:#FFC468;"></span> </td>
+        <td>Teilweise Abgeschlossen</td>
+        <td>Siech Cycles</td>
+        <td>Hans Muster </td>
+        <td>4654654654 </td>
+        <td>Bestellnummer 1234567894 </td>
+        <td>10.10.2021 </td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F8FF8F;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7BE77E;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F3368D;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7A8CF0;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#565656;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#FFC468;"></span> </td>
+        <td>Teilweise Abgeschlossen</td>
+        <td>Siech Cycles</td>
+        <td>Hans Muster </td>
+        <td>4654654654 </td>
+        <td>Bestellnummer 1234567894 </td>
+        <td>10.10.2021 </td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F8FF8F;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7BE77E;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F3368D;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7A8CF0;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#565656;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#FFC468;"></span> </td>
+        <td>Teilweise Abgeschlossen</td>
+        <td>Siech Cycles</td>
+        <td>Hans Muster </td>
+        <td>4654654654 </td>
+        <td>Bestellnummer 1234567894 </td>
+        <td>10.10.2021 </td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F8FF8F;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7BE77E;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F3368D;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7A8CF0;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#565656;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#FFC468;"></span> </td>
+        <td>Teilweise Abgeschlossen</td>
+        <td>Siech Cycles</td>
+        <td>Hans Muster </td>
+        <td>4654654654 </td>
+        <td>Bestellnummer 1234567894 </td>
+        <td>10.10.2021 </td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F8FF8F;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7BE77E;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F3368D;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7A8CF0;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#565656;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#FFC468;"></span> </td>
+        <td>Teilweise Abgeschlossen</td>
+        <td>Siech Cycles</td>
+        <td>Hans Muster </td>
+        <td>4654654654 </td>
+        <td>Bestellnummer 1234567894 </td>
+        <td>10.10.2021 </td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F8FF8F;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7BE77E;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F3368D;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7A8CF0;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#565656;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#FFC468;"></span> </td>
+        <td>Teilweise Abgeschlossen</td>
+        <td>Siech Cycles</td>
+        <td>Hans Muster </td>
+        <td>4654654654 </td>
+        <td>Bestellnummer 1234567894 </td>
+        <td>10.10.2021 </td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F8FF8F;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7BE77E;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F3368D;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7A8CF0;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#565656;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#FFC468;"></span> </td>
+        <td>Teilweise Abgeschlossen</td>
+        <td>Siech Cycles</td>
+        <td>Hans Muster </td>
+        <td>4654654654 </td>
+        <td>Bestellnummer 1234567894 </td>
+        <td>10.10.2021 </td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F8FF8F;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="r-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7BE77E;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#F3368D;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#7A8CF0;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+      <tr>
+        <td> <span class="color" style="background:#565656;"></span> </td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+        <td><a class="p-btn">Bearbeiten</a> </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
+
+
+    </section>
+
+
+
+    <section>
+      <div class="gw-table bg-sec">
+        <table class="alt-rows" id="table-3">
+          <thead>
+            <tr>
+              <th><span>Datetime</span></th>
+              <th><span>Title</span></th>
+              <th><span>Title</span></th>
+              <th><span>Tags</span></th>
+              <th><span>Actions</span></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>01.01.2022 10:02</td>
+              <td>Content 1</td>
+              <td>Content 1</td>
+              <td>
+                <span class="tag b4e">b4e</span>
+                <span class="tag b4s">b4s</span>
+                <span class="tag wd">wd</span>
+                <span class="tag m20">20m</span>
+                <span class="tag mb">mb</span>
+              </td>
+              <td><a class="p-btn">Open</a> </td>
+            </tr>
+            <tr>
+              <td>Content 2</td>
+              <td>Content 2</td>
+              <td>Content 2</td>
+              <td>Content 2</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
     </section>
   </main>
 
