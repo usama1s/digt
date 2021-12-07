@@ -297,4 +297,51 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+  // select
+  $(".f-accordion").accordion({
+    header: ".link",
+    event: "click",
+    collapsible: true,
+    active: false,
+    animate: 280,
+  });
+
+
+  $("input").parent().click(function(e) {
+// console.log($(this).hasClass("error"));
+    if ($(this).hasClass("error")) {
+      // alert("fdsa");
+      var val = $(this).find("input").val();
+      $(this).find("input").val(val).focus();
+      $(this).removeClass("error");
+    }
+
+
+  });
+
+  $("input").focusout(function(e){
+    // $(this).parent().addClass("error");
+
+    if ($(this).attr("type")=="email") {
+      if (!IsEmail($(this).val())){
+        $(this).parent().addClass("error");
+      }
+    }else if($(this).attr("type")=="email"){
+
+    }
+  });
+
+
 });
+function IsEmail(email) {
+   var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+   if(!regex.test(email)) {
+     return false;
+   }else{
+     return true;
+   }
+}

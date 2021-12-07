@@ -20,10 +20,18 @@
       <h1 class="s-title">Logistik Overview</h1>
       <hr class="s-hr">
 
-      <div class="d-flex">
-        <input class="d-input" type="date" name="" value="">
-        <input class="d-input" type="date" name="" value="">
-        <button class="g-btn" type="button" name="button">Send</button>
+      <div class="d-flex flex-wrap">
+        <div class="w-auto">
+          <input class="d-input" type="date" name="" value="">
+        </div>
+        <div class="w-auto ml-10">
+          <input class="d-input" type="date" name="" value="">
+        </div>
+<div class="w-auto ml-10">
+  <button class="g-btn" type="button" name="button">Send</button>
+</div>
+
+
       </div>
       <hr class="s-hr">
 
@@ -658,8 +666,8 @@
             <div class="">
               <label for="">Password</label>
             </div>
-            <div class="">
-              <input type="password" name="" value="input" required>
+            <div class="error">
+              <input class="" type="password" name="" value="input" required>
             </div>
             <div class="">
               <!-- <input type="text" name="" value="input" required> -->
@@ -670,7 +678,7 @@
               <label for="">Email</label>
             </div>
             <div class="">
-              <input type="email" name="" value="input" required>
+              <input type="email" name="" value="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
             </div>
             <div class="">
               <!-- <input type="text" name="" value="input" required> -->
@@ -1438,7 +1446,7 @@
               <td>Content 1</td>
               <td>
                 <span class="tag b4e">b4e</span>
-            
+
                 <span class="tag mb">mb</span>
               </td>
               <td><a class="p-btn">Open</a> </td>
@@ -1482,6 +1490,114 @@
 
       </div>
 
+    </section>
+
+
+    <section>
+      <div class="bg-sec ">
+        <h1 class="s-subtitle mt-20 mb-20">Title</h1>
+
+        <select class="f-select" name="" >
+          <option value="">Form</option>
+          <option value="">1</option>
+          <option value="">1</option>
+          <option value="">1</option>
+        </select>
+        <hr class="s-hr mt-30 mb-30">
+
+        <ul class="f-accordion">
+          <li>
+            <a class="link" href="#">Accordion</a>
+            <div class="">
+              <div class="gw-table">
+                <table class="alt-rows" id="table-3">
+                  <thead>
+                    <tr>
+                      <th><span>Datetime</span></th>
+                      <th><span>Title</span></th>
+                      <th><span>Title</span></th>
+                      <th><span>Tags</span></th>
+                      <th><span>Actions</span></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>01.01.2022 10:02</td>
+                      <td>Content 1</td>
+                      <td>Content 1</td>
+                      <td>
+                        <span class="tag b4e">b4e</span>
+                        <span class="tag b4s">b4s</span>
+                        <span class="tag wd">wd</span>
+                        <span class="tag m20">20m</span>
+                        <span class="tag mb">mb</span>
+                      </td>
+                      <td><a class="p-btn">Open</a> </td>
+                    </tr>
+                    <tr>
+                      <td>01.01.2022 10:02</td>
+                      <td>Content 1</td>
+                      <td>Content 1</td>
+                      <td>
+                        <span class="tag b4e">b4e</span>
+
+                        <span class="tag mb">mb</span>
+                      </td>
+                      <td><a class="p-btn">Open</a> </td>
+                    </tr>
+                    <tr>
+                      <td>01.01.2022 10:02</td>
+                      <td>Content 1</td>
+                      <td>Content 1</td>
+                      <td>
+                        <span class="tag b4e">b4e</span>
+
+                        <span class="tag mb">mb</span>
+                      </td>
+                      <td><a class="p-btn">Open</a> </td>
+                    </tr>
+                    <tr>
+                      <td>01.01.2022 10:02</td>
+                      <td>Content 1</td>
+                      <td>Content 1</td>
+                      <td>
+
+                        <span class="tag m20">20m</span>
+
+                      </td>
+                      <td><a class="p-btn">Open</a> </td>
+                    </tr>
+                    <tr>
+                      <td>01.01.2022 10:02</td>
+                      <td>Content 1</td>
+                      <td>Content 1</td>
+                      <td>
+                        <span class="tag b4e">b4e</span>
+                        <span class="tag b4s">b4s</span>
+
+                      </td>
+                      <td><a class="p-btn">Open</a> </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="link" href="#">Accordion</a>
+            <div class="">
+              <div class="f-cards d-flex align-items-center justify-content-center">
+<div class="card">
+
+</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
