@@ -1,7 +1,8 @@
 @media (max-width: 767px) {
+  .bg-sec,
   .content{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
+    padding: 15px;
   }
   .mobile-nav-btn {
     display: flex;
@@ -216,12 +217,15 @@ padding-left: 20px;
 }
 
 @media (max-width:991px) {
+  .ui-dialog{
+    min-width: 0px !important;
+  }
   .gw-table{
 
     overflow-x: auto;
   }
   .gw-table table{
-    min-width: 676px;
+    /* min-width: 676px; */
   }
   .d-item-40-60,
   .d-item-50-50,
@@ -311,5 +315,8 @@ margin-bottom: 20px;
   }
   footer ul li{
     text-align: center;
+  }
+  .ui-dialog{
+    min-width: 650px;
   }
 }

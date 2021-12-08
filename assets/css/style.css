@@ -837,9 +837,11 @@ text-transform: uppercase;
   position: absolute !important;
   left: 50% !important;
   top: 50% !important;
-  transform: translate(-50%, -50%);
-  width: auto !important;
+  transform: translate(calc(-50% + 5px), -50%);
+  /* width: auto !important; */
+  min-width: 780px;
   z-index: 1;
+  padding: 0 20px;
 }
 
 .ui-dialog-titlebar,
@@ -867,8 +869,8 @@ text-transform: uppercase;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding: 28px;
-  width: 80%;
-  min-width: 780px;
+  /* width: 80%; */
+  /* min-width: 780px; */
   max-height: 640px;
   z-index: 1;
 }
@@ -928,10 +930,16 @@ text-transform: uppercase;
 .s-modal-block ul:nth-last-of-type(1) {
   margin-bottom: 0;
 }
-
-.s-modal-block ul li {}
+.s-modal-block ul li{
+  transition: background 0.3s;
+border-radius: 4px;
+}
+.s-modal-block ul li:hover {
+  background: rgba(123, 231, 126, 0.15);
+}
 
 .s-modal-block ul li a {
+  display: block;
   font-weight: 500;
   font-size: 15px;
   line-height: 28px;
@@ -970,6 +978,9 @@ text-transform: uppercase;
   margin: 10px 0;
   background:
 } */
+.gw-table {
+    overflow-x: auto;
+}
 .gw-table table {
   /* min-width: 600px;
 overflow-x: scroll; */
@@ -1040,10 +1051,12 @@ overflow-x: scroll; */
 
 .gw-table th {
   font-weight: bold;
+  white-space:nowrap
 }
 
 .gw-table td {
   font-weight: normal;
+  white-space:nowrap
 }
 
 .alt-rows tbody tr:nth-of-type(even) {
@@ -1435,7 +1448,7 @@ animation: slideUp 0.4s linear 1;
   text-align: center;
   letter-spacing: 0.05em;
   color: #FFFFFF;
-  width: 80px;
+  width: 82px;
   min-width: 80px;
 }
 
@@ -1445,7 +1458,7 @@ animation: slideUp 0.4s linear 1;
 }
 
 .horizontal-nav>div:nth-of-type(1) {
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   /* padding: 0 40px; */
   cursor: pointer;

@@ -203,6 +203,9 @@ $(document).ready(function() {
   // search modal
   $("#search-btn").click(function() {
     $("#search_modal").dialog('open');
+    $("#navigation").accordion({
+      active: false
+    });
   });
 
   $("#search_modal").dialog({
@@ -266,8 +269,8 @@ $(document).ready(function() {
     ordering: true,
     "bInfo": false,
     language: {
-      search: "",
-    },
+  search: "",
+},
     "pagingType": "full_numbers",
   });
 
@@ -345,3 +348,8 @@ function IsEmail(email) {
      return true;
    }
 }
+
+
+$(window).resize(function(){
+
+});
