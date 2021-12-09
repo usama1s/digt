@@ -86,6 +86,7 @@ a.g-atag {
   line-height: 19px;
   width: 157px;
   cursor: pointer;
+  height: 39px;
   /* margin-left: 12px; */
 }
 /* .d-input:nth-of-type(1){
@@ -2050,7 +2051,7 @@ footer ul li:nth-last-of-type(1){
   list-style: none;
 }
 .ui-timepicker-container ul li{
-
+width: 100% !important;
 }
 .ui-timepicker-container li a{
   display: block;
