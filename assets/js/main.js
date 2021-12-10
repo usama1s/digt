@@ -337,6 +337,10 @@ $(document).ready(function() {
 
     }
   });
+  var d = new Date();
+           var currMonth = d.getMonth();
+           var currYear = d.getFullYear();
+           var startDate = new Date(currYear, currMonth, 1);
   $('.timepicker').timepicker({
     timeFormat: 'h:mm p',
  interval: 60,
@@ -348,9 +352,11 @@ $(document).ready(function() {
  dropdown: true,
  scrollbar: true
   });
-  $('.timepicker').click(function(e){
-
-  })
+  $( ".datepicker" ).datepicker({
+    defaultDate: "+5",
+    // "setDate", Date()
+    // dateFormat, "mm/dd/yy"
+  });
 
 });
 function IsEmail(email) {

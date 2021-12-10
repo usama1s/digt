@@ -51,7 +51,7 @@
 }
   .navigation {
     min-width: 400px !important;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 59px;

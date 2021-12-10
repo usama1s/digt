@@ -2037,7 +2037,9 @@ footer ul li:nth-last-of-type(1){
   border-right: 0;
   padding-right: 0;
 }
+.ui-datepicker,
 .ui-timepicker-container{
+
   position: absolute;
   max-height: 225px;
   overflow-y: auto;
@@ -2062,13 +2064,61 @@ width: 100% !important;
   background: rgba(123, 231, 126, 0.15);
   border-radius: 4px;
 }
+.ui-datepicker{
+  width: 250px;
+  max-height: none;
+}
+.ui-datepicker table{
+table-layout: fixed;
+padding: 10px;
+}
+.ui-datepicker thead th{
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+}
+.ui-datepicker tbody td{
+  font-size: 12px;
+  height: 26px;
+  text-align: center;
+}
+.ui-datepicker a.ui-state-active{
+  background: rgba(123, 231, 126, 0.15);
+  border-radius: 4px;
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ui-datepicker .ui-datepicker-today a{
+  color: #39f;
+}
+.ui-datepicker-header{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(123, 231, 126, 0.15);
+}
+.ui-datepicker-title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+}
+.ui-datepicker-header a{
+  width: auto;
+}
 input.timepicker{
   background-image: url(../images/icons/time.svg) !important;
       background-position: calc(100% - 14px) center !important;
       background-size: 15px !important;
       background-repeat: no-repeat !important;
 }
-input[type="date"]{
+input.datepicker{
   background-image: url(../images/icons/calendar.svg) !important;
       background-position: calc(100% - 14px) center !important;
       background-size: 13px !important;
