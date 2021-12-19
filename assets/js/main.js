@@ -262,6 +262,7 @@ $(document).ready(function() {
     ordering: true,
     "bInfo": false
   });
+
   // datatable
   var table2 = $('#table-2').DataTable({
     paging: true,
@@ -269,8 +270,9 @@ $(document).ready(function() {
     ordering: true,
     "bInfo": false,
     language: {
-  search: "",
-},
+      search: "_INPUT_",
+        searchPlaceholder: "Search"
+    },
     "pagingType": "full_numbers",
   });
 
@@ -287,7 +289,8 @@ $(document).ready(function() {
     ordering: true,
     "bInfo": false,
     language: {
-      search: "",
+      search: "_INPUT_",
+        searchPlaceholder: "Search"
     },
     "pagingType": "full_numbers",
   });
@@ -298,11 +301,56 @@ $(document).ready(function() {
   });
   table3.draw();
 
+  $('#table-5').DataTable({
+    paging: false,
+    searching: false,
+    ordering: true,
+    language: {
+      search: "_INPUT_",
+        searchPlaceholder: "Search"
+    },
+    "bInfo": false
+  });
+
+  var tableM = $('.table-M').DataTable({
+    paging: true,
+    searching: true,
+    ordering: true,
+    "bInfo": false,
+    language: {
+      search: "_INPUT_",
+        searchPlaceholder: "Search"
+    },
+    "pagingType": "full_numbers",
+  });
+
+  $('.table-M').on('draw.dt', function(e) {
+    var info = tableM.page.info();
+    $("#" + $(this).attr("id") + "_paginate span").html(info.page + 1 + "/" + info.pages);
+  });
+  tableM.draw();
+$('.table-M').wrap('<div class="table-overflow-x"></div>');
 
 
+  var tableS = $('.table-S').DataTable({
+    paging: false,
+    searching: false,
+    ordering: true,
+    "bInfo": false,
+    language: {
+      search: "_INPUT_",
+        searchPlaceholder: "Search"
+    },
+    "pagingType": "full_numbers",
+  });
 
+  $('.table-S').on('draw.dt', function(e) {
+    var info = tableS.page.info();
+    $("#" + $(this).attr("id") + "_paginate span").html(info.page + 1 + "/" + info.pages);
+  });
+  tableS.draw();
 
-
+$('.table-S').wrap('<div class="table-overflow-x"></div>');
 
   // select
   $(".f-accordion").accordion({

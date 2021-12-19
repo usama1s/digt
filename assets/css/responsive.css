@@ -1,4 +1,9 @@
 @media (max-width: 767px) {
+  .form-field label{
+    text-align: left !important;
+    /* width: 100%; */
+    display: block;
+  }
   .content{
     padding-top: 75px !important;
   }
@@ -205,7 +210,7 @@ padding-left: 20px;
         padding: 0 20px;
   }
   .navigation-submenu-dropdown>ul>li a.active{
-    background: transparent;
+    /* background: transparent; */
   }
   .form-field.submit-field{
     flex-direction: row !important;
@@ -225,7 +230,7 @@ padding-left: 20px;
   }
   .gw-table{
 
-    overflow-x: auto;
+    /* overflow-x: auto; */
   }
   .gw-table table{
     /* min-width: 676px; */
@@ -304,10 +309,16 @@ margin-bottom: 20px;
   .personel-info-form .form-field>div:nth-last-of-type(1){
     margin-bottom: 0;
   }
+  .dataTables_filter{
+    width: 45%;
+float: right;
+margin-right: 10px;
+  }
 }
 @media (max-width:1300px) {
   footer{
     flex-direction: column;
+    position: static;
   }
   footer ul{
     margin-top: 20px;
