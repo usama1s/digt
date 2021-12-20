@@ -185,6 +185,9 @@ table .p-btn {
   color: #FFFFFF !important;
   transition: background 0.5s;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .o-btn:focus,

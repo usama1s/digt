@@ -402,9 +402,12 @@ $('.table-S').wrap('<div class="table-overflow-x"></div>');
   });
   $( ".datepicker" ).datepicker({
     defaultDate: "+5",
-    // "setDate", Date()
     // dateFormat, "mm/dd/yy"
   });
+  $.datepicker.setDefaults({
+     dateFormat: 'dd.mm.yy'
+     
+});
 
 });
 function IsEmail(email) {
