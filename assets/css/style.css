@@ -3506,6 +3506,7 @@ nav ul li object {
   line-height: 135%;
   letter-spacing: 0.05em;
   color: #565656;
+  padding-left: 0;
 }
 
 .scan h5 {
