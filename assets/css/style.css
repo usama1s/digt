@@ -282,6 +282,14 @@ table .p-btn {
   margin-right: 10px;
 }
 
+.ml-15 {
+  margin-left: 15px !important;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
 .mt-0 {
   margin-top: 0 !important;
 }
@@ -1865,11 +1873,11 @@ table .color {
   border-radius: 5px;
   padding: 0 10px;
   margin: 0 10px;
-
 }
+
 select:focus,
 select:hover,
-select{
+select {
   -moz-appearance: none;
   /* Firefox */
   -webkit-appearance: none;
@@ -1877,7 +1885,7 @@ select{
   appearance: none;
   background-image: url('../images/icons/arrow-select.svg') !important;
   background-position: calc(100% - 12px) calc(53% + 0px) !important;
-    /* background-size: 13px 6px; */
+  /* background-size: 13px 6px; */
   background-repeat: no-repeat !important;
 }
 
@@ -3223,4 +3231,325 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .text-red {
   color: #EA4C4D;
+}
+
+/* login pagwe */
+nav {
+  background: #000000;
+  height: 50px;
+  padding: 0px 24px;
+}
+
+nav>div {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+nav .brand {
+  width: auto;
+  margin-right: 40px;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 110%;
+  /* identical to box height, or 17px */
+  text-align: center;
+  letter-spacing: -0.01em;
+  /* Medium Grey */
+  width: auto;
+  color: #797979;
+  margin-right: 55px;
+  /* padding: 0 10px; */
+}
+
+nav ul li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+nav ul li object {
+  margin-left: 10px;
+}
+
+.login-sec {
+  min-height: calc(100vh - 50px);
+  min-width: 100vw;
+  background-image: url('../images/icons/bg-login.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.login-div {
+  max-width: 450px;
+  /* max-height: 467px */
+  background: #565656;
+  /* Shadow Outside */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 30px;
+  /* position: absolute; */
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-div h1 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 110%;
+  /* identical to box height, or 39px */
+  text-align: center;
+  /* Dark Gray */
+  color: #FFFFFF;
+}
+
+.login-div form {
+  max-width: 228px;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.login-div form button,
+.login-div form input {
+  background: #F6F6F6;
+  border: 1px solid #E8E8E8;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #4A4A4A;
+  height: 35px;
+  width: 100%;
+  border: 0;
+  margin-bottom: 13px;
+}
+
+.login-div form button {
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 15px;
+  border: 0;
+  transition: background 0.4s;
+}
+
+.login-div form button:hover {
+  background: #000000;
+  /* White */
+  color: #FFFFFF;
+}
+
+.numeric-pad ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* width: 228px; */
+  margin: auto;
+}
+
+.numeric-pad ul li {
+  margin: 3px;
+  width: 70px;
+  height: 35px;
+}
+
+.numeric-pad ul li a {
+  display: block;
+  width: 70px;
+  height: 35px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.numeric-pad ul li h2 {
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  color: #FFF;
+  font-weight: 300
+}
+
+.numeric-pad ul li p {
+  font-size: 9px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: #FFF;
+  font-weight: 200;
+}
+
+.numeric-pad ul li:nth-last-of-type(3) a,
+.numeric-pad ul li:nth-last-of-type(1) a {
+  box-shadow: unset;
+}
+
+.profile-pic.big {
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.card-stat {
+  height: 172px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.card-stat p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 135%;
+  /* identical to box height, or 19px */
+  letter-spacing: 0.05em;
+  /* Dark Gray */
+  color: #565656;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.card-stat h3 {
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 53px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  text-align: center;
+  /* White */
+  color: #565656;
+}
+
+.card-stat.active {
+  background: #7BE77E;
+}
+
+.card-stat.active p,
+.card-stat.active h3 {
+  color: #FFF;
+}
+
+.text-grey {
+  color: #D9D8D8 !important;
+}
+
+.login-content .row {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+  width: calc(100% + 20px) !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.login-content .row>div {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+.highscore {
+  overflow-y: auto;
+}
+
+.highscore>p {
+  color: #8A8A8A;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.highscore div p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  line-height: 23px;
+  border-top: 1px solid #D9D8D8;
+  margin: 0;
+}
+
+.highscore div p span {
+  width: auto;
+}
+
+
+.login-content .s-modal-block ul li a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+.scan h5 {
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 135%;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+.scan {
+  padding: 25px;
+  height: 149px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.successfull {
+  background: rgba(123, 231, 126, 0.15);
+
+}
+.fail{
+  background: rgba(243, 54, 141, 0.15);
+
+}
+.p-0 {
+  padding: 0 !important;
+}
+
+.scan .int-btn {
+  background: #FFFFFF;
+  border: 1px solid #D9D8D8;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 51px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 135%;
+  letter-spacing: 0.05em;
+  color: #565656;
+  border: 0;
+}
+
+.scan .g-btn {
+  height: 78px;
 }
